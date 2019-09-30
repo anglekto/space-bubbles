@@ -1,12 +1,146 @@
-:root {
-  font: 16px / 1 sans-serif;
-}
-
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
-  min-height: 100%;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #999;
+}
+
+header {
+  background: linear-gradient(#D6E0FF, #94A6DC);
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Sniglet', cursive;
+  font-size: 35px;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+nav a {
+  padding: 0 20px;
+  color: #fff;
+}
+
+nav a:hover {
+  background-color: hsla(0,0%,100%, 0.7);
+  padding: 12px 20px;
+  transition: background-color .2s ease-out;
+  border-radius: 5px;
+  color: #94A6DC;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8vh;
+  width: 100%;
+}
+
+.food {
+  background: url('./images/banh-mi.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 350px;
+  width: 40%;
+  border: 3px solid #94A6DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drink {
+  background: url('./images/boba.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 350px;
+  width: 40%;
+  border: 3px solid #94A6DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food h2, .drink h2 {
+  color: #fff;
+  font-size: 30px;
+  background-color: hsla(0,0%,100%, 0.5);
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-family: 'Sniglet', cursive;
+  font-weight: 400;
+}
+
+.food:hover, .drink:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #999;
+}
+
+.testimonials {
+  margin-top: 8vh;
+}
+
+.testimonials h2 {
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'Sniglet', cursive;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+blockquote {
+  border-left: 4px solid #94A6DC;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #D6E0FF;
+}
+
+blockquote > p {
+  z-index: 0;
+  position: relative;
+  margin-top: -55px;
+  margin-left: 20px;
+  font-weight: 200;
+}
+
+.quote-mark {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 90px;
+  z-index: 1;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+  #middle-section, .middle-section {
+    flex-wrap: wrap;
+  }
 }
