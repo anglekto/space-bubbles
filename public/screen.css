@@ -60,6 +60,19 @@ nav a:hover {
   width: 100%;
 }
 
+header a {
+  position: absolute;
+  bottom: 20px;
+  opacity: .5;
+  color: #fff;
+}
+
+header a:hover {
+  color: #fff;
+  cursor: pointer;
+  opacity: 1;
+}
+
 .food {
   background: url('./images/banh-mi.jpg');
   background-size: cover;
@@ -140,7 +153,7 @@ footer {
 }
 
 @media only screen and (max-width: 950px) {
-  #middle-section, .middle-section {
+  .middle-section {
     flex-wrap: wrap;
   }
 }
